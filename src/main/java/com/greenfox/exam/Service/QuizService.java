@@ -2,6 +2,7 @@ package com.greenfox.exam.Service;
 
 import com.greenfox.exam.Model.QuestionToList;
 import com.greenfox.exam.Model.QuestionsResponse;
+import com.greenfox.exam.Repository.AnswerBodyRepo;
 import com.greenfox.exam.Repository.QuestionToListRepo;
 import com.greenfox.exam.Repository.QuestionRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,8 @@ public class QuizService {
   QuestionRepo questionRepo;
   @Autowired
   QuestionToListRepo questionToListRepo;
+  @Autowired
+  AnswerBodyRepo answerBodyRepo;
 
   public QuestionsResponse getFiveRandomQuestions() {
     long savedPreviousID = 0;

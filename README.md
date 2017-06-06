@@ -105,16 +105,17 @@ Your task is to create a RESTful quiz application with full of greenfox question
 ### In what cases would you choose to use an abstract class over an interface?
 
 Please define it with your own words. We are expecting at least 3 distinct ideas that you write here:
+if I want to predefine methods which the subclasses can inherite, saves some time. Also Abstract classes can have fileds while interface can only have abstract methods which the subclass can also inherit.
 
 
 ### Analyzing URL
 Please name the parts of the URL below.
 [<img src="assets/URLanalysis.png" alt="parts of URL" />](assets/URLanalysis.png?raw=true)
 
-1:  
-2:  
-3:  
-4:  
-5:  
-6:  
-7:  
+1: protocol identifying scheme  
+2: host name 
+3: domain name 
+4: port number 
+5: path 
+6: question mark, separator, quiery identifier 
+7: parameter 
